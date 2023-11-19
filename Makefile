@@ -12,3 +12,11 @@ snake: ## 构建贪吃蛇镜像
 .PHONY: snake-push
 snake-push: ## 推送贪吃蛇镜像到 docker hub
 	docker push webgamedevelop/snake:latest
+
+.PHONY: 2048
+2048: ## 构建 2048 镜像
+	docker build -t webgamedevelop/2048:latest -f 2048/Dockerfile 2048
+
+.PHONY: 2048-push
+2048-push: ## 推送 2048 镜像到 docker hub
+	docker push webgamedevelop/2048:latest
