@@ -36,3 +36,11 @@ react-tetris: ## 构建俄罗斯方块镜像
 .PHONY: react-tetris-push
 react-tetris-push: ## 推送俄罗斯方块镜像到 docker hub
 	docker push webgamedevelop/react-tetris:latest
+
+.PHONY: super-mario
+super-mario: ## 构建超级马里奥镜像
+	docker build -t webgamedevelop/super-mario:latest -f super-mario/Dockerfile super-mario
+
+.PHONY: super-mario-push
+super-mario-push: ## 推送超级马里奥镜像到 docker hub
+	docker push webgamedevelop/super-mario:latest

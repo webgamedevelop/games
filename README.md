@@ -30,3 +30,10 @@ webgame 项目游戏镜像 Dockerfile 和构建脚本仓库
 * 作者 GitHub 主页: https://github.com/chvin
 * 镜像: webgamedevelop/react-tetris:latest
 * Dockerfile: [react-tetris/Dockerfile](./react-tetris/Dockerfile)
+
+### 5. Super Mario Bros（超级马里奥）
+* 项目演示地址: http://martindrapeau.github.io/backbone-game-engine/super-mario-bros/index.html
+* GitHub 项目链接: https://github.com/martindrapeau/backbone-game-engine
+* 作者 GitHub 主页: https://github.com/martindrapeau
+* 镜像: webgamedevelop/super-mario:latest
+* Dockerfile: [super-mario/Dockerfile](./super-mario/Dockerfile)
