@@ -28,3 +28,11 @@ battle-city: ## 构建坦克大战镜像
 .PHONY: battle-city-push
 battle-city-push: ## 推送坦克大战镜像到 docker hub
 	docker push webgamedevelop/battle-city:latest
+
+.PHONY: react-tetris
+react-tetris: ## 构建俄罗斯方块镜像
+	docker build -t webgamedevelop/react-tetris:latest -f react-tetris/Dockerfile react-tetris
+
+.PHONY: react-tetris-push
+react-tetris-push: ## 推送俄罗斯方块镜像到 docker hub
+	docker push webgamedevelop/react-tetris:latest
