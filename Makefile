@@ -20,3 +20,11 @@ snake-push: ## 推送贪吃蛇镜像到 docker hub
 .PHONY: 2048-push
 2048-push: ## 推送 2048 镜像到 docker hub
 	docker push webgamedevelop/2048:latest
+
+.PHONY: battle-city
+battle-city: ## 构建坦克大战镜像
+	docker build -t webgamedevelop/battle-city:latest -f battle-city/Dockerfile battle-city
+
+.PHONY: battle-city-push
+battle-city-push: ## 推送坦克大战镜像到 docker hub
+	docker push webgamedevelop/battle-city:latest
