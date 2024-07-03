@@ -1,4 +1,4 @@
-FROM bitnami/git:latest as builder
+FROM bitnami/git:latest AS builder
 
 WORKDIR /workspace
 RUN git clone https://github.com/martindrapeau/backbone-game-engine.git
